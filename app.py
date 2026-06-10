@@ -5,7 +5,7 @@ import redis
 from flask import Flask
 
 app = Flask(__name__)
-redis_url = os.environ.get (’REDIS_URL’, ’redis://redis:6379’)
+redis_url = os.environ.get ('REDIS_URL', 'redis://redis:6379')
 cache = redis.from_url(redis_url)
 
 
